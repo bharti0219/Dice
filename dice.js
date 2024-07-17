@@ -3,12 +3,18 @@ let val=document.querySelector("select");
 let div=document.querySelector("div");
 let btn1=document.querySelector(".button");
 let par=document.querySelector("h3");
+let rest=document.querySelector(".reset");
+rest.addEventListener("click",function()
+{
+    div.innerHTML="";
+})
 btn.addEventListener("click",function()   
 {
     let num=val.value;
 
     for(let i=0;i<num;i++)
     {
+        console.log("hello");
         let image=document.createElement("img");
         let name=`image_${i}`;
         image.setAttribute("id",name);
